@@ -18,7 +18,7 @@ false
 otherwise return -1
 - `toString()` - prints linked list as a string in the format: `( value ) -> ( value ) -> ( value ) -> null`
 - `insertAt(index, ...values)` - insert new nodes with the values given at the 
-index given. if index given is out of bounds (< 0 or > size of linked list), 
-throw `RangeError`
+index given. if index given is out of bounds (below 0 or higher or equal to size 
+of linked list), throw `RangeError`
 - `removeAt(index)` - remove node at the index given. similarly, if index given is 
 out of bounds (below 0 or higher or equal to size of linked list), `throw RangeError`
