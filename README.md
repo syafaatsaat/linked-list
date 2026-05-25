@@ -1,3 +1,3 @@
-# template-web
+# linked-list
 
-Creating a template for future web dev projects
+Revision on Data Structures and this project is focused on Linked Lists. 
