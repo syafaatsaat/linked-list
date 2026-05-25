@@ -1,5 +1,5 @@
 import "./styles.css";
-import { Node, LinkedList } from "./linked-list.js";
+import { LinkedList } from "./linked-list.js";
 
 const list = new LinkedList();
 

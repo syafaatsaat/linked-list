@@ -1,7 +1,7 @@
-export class Node {
-  constructor(value=null, nextNode=null) {
+class Node {
+  constructor(value=null) {
     this.value = value;
-    this.nextNode = nextNode;
+    this.nextNode = null;
   }
 }
 
@@ -26,7 +26,8 @@ export class LinkedList {
   }
 
   prepend(value) {
-    const newNode = new Node(value, this.head);
+    const newNode = new Node(value);
+    newNode.nextNode = this.head;
     this.head = newNode;
   }
 
@@ -118,6 +119,7 @@ export class LinkedList {
     let iterNode = this.head;
     while (iterNode) {
       str += `( ${iterNode.value} ) -> `;
+      iterNode = iterNode.nextNode;
     }
 
     str += "null";
